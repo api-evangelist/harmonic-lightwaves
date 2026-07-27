@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/harmonicinc-com
+notes: >-
+  Harmonic Inc (formerly Harmonic Lightwaves) publishes first-party client-side
+  ad-tracking SDKs on GitHub for implementing server-guided ad insertion (SGAI)
+  client beaconing across platforms. No package-registry (npm/PyPI/Maven) release
+  was confirmed; these are distributed as GitHub source. The org's other public
+  repos (shaka-player, ExoPlayer, tsduck) are forks of third-party players/tools
+  and are intentionally excluded. Harmonic's VOS REST API ships no public client
+  SDK or machine-readable OpenAPI spec.
+packages:
+  - language: swift
+    registry: github
+    name: client-side-ad-tracking-ios-lib
+    url: https://github.com/harmonicinc-com/client-side-ad-tracking-ios-lib
+    official: true
+    description: Harmonic client-side ad tracking library for iOS.
+  - language: kotlin
+    registry: github
+    name: client-side-ad-tracking-android
+    url: https://github.com/harmonicinc-com/client-side-ad-tracking-android
+    official: true
+    description: Harmonic client-side ad tracking for Android.
+  - language: brighterscript
+    registry: github
+    name: client-side-ad-tracking-roku
+    url: https://github.com/harmonicinc-com/client-side-ad-tracking-roku
+    official: true
+    description: Roku client-side ad beaconing with demo app.

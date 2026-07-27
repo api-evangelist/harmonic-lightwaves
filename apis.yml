@@ -1,8 +1,26 @@
 aid: harmonic-lightwaves
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/harmonic-lightwaves.png
 name: Harmonic Lightwaves
-description: 'Harmonic Lightwaves is a company surfaced as a portfolio company of kleiner-perkins and
-  added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Harmonic Lightwaves (now Harmonic Inc, NASDAQ: HLIT) is a pure-play broadband and video-delivery
+  technology company headquartered in San Jose, California, founded in 1988 as Harmonic Lightwaves.
+  It builds virtualized broadband access (the cOS platform, Distributed Access Architecture nodes,
+  and fiber-to-the-x solutions) and cloud-native video streaming and processing (the VOS platform and
+  VOS360 SaaS). Harmonic exposes a VOS REST API for media management, packaging, DRM, live event and
+  linear-TV workflows, publishes first-party client-side ad-tracking SDKs for iOS, Android and Roku on
+  GitHub, and maintains a technical documentation library. Its developer surface is largely
+  operator- and customer-facing rather than a self-service public developer program.
 url: https://raw.githubusercontent.com/api-evangelist/harmonic-lightwaves/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Video Streaming
+- Broadband
+- Media
+- DRM
+- Ad Tech
+- Telecommunications
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,32 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/harmonic-lightwaves-domain-security.yml
 - type: Website
   url: https://www.harmonicinc.com
+- type: Documentation
+  url: https://techlibrary.harmonicinc.com
+- type: APIReference
+  name: VOS REST API
+  url: https://s3-us-west-1.amazonaws.com/vos-public-api/index.html
+- type: GitHubOrganization
+  url: https://github.com/harmonicinc-com
+- type: Support
+  url: https://www.harmonicinc.com/technical-support/
+- type: Blog
+  url: https://www.harmonicinc.com/insights/blog
+- type: PrivacyPolicy
+  url: https://www.harmonicinc.com/privacy/
+- type: TermsOfService
+  url: https://www.harmonicinc.com/terms-use/
+- type: Packages
+  url: packages/harmonic-lightwaves-packages.yml
+- type: SDKs
+  name: Client-side ad-tracking SDKs (iOS/Android/Roku)
+  url: packages/harmonic-lightwaves-packages.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
